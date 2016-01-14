@@ -3,13 +3,13 @@
 
 <head>
     <title>Titulo</title>
-    <!--# include file="/includes/head.html" -->
+    include "/includes/head.html"
 
 </head>
 
 <body>
 
-    <!--# include file="/includes/menu.html" -->
+include "/includes/menu.html"
 
     <div class="container">
         <div class="row">
@@ -24,24 +24,29 @@
                     <div class="box-image garden-of-terror"></div>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-8">
                 <h2>Objetivos</h2>
-                <h3>Primeira Noite</h3>
-                <p>Começa em <strong>1:30</strong> minutos
 
-                <h3>Noites</h3>
-                <p>Noites começam 3:20 após o final da última.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Primeira Noite</h3>
+                        <p>Começa em <strong>1:30</strong> minutos
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Noites</h3>
+                        <p>Noites começam 3:20 após o final da última.</p>
+                    </div>
+                        <div class="col-md-6">
+                        <h3>Sementes</h3>
+                        <p><strong>Golem</strong>: 60 sementes</p>
+                        <p><strong>Filhotes</strong>: 15 sementes</p>
+                    </div>
+                </div>
 
-                <h3>Sementes</h3>
-                <p><strong>Golem</strong>: 60 sementes</p>
-                <p><strong>Filhotes</strong>: 15 sementes</p>
-
-                <hr />
             </div>
         </div>
+        <hr />
 
         <div class="row">
             <div class="col-lg-12">
@@ -69,9 +74,10 @@
 
 
 
-    <!--# include file="/includes/map-footer.html" -->
 
-    <!--# include file="/includes/footer.html" -->
+include "/includes/map-footer.html"
+
+include "/includes/footer.html"
 
     <script type="text/javascript">
         var data = {

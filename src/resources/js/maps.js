@@ -22,6 +22,7 @@ HOTS.MAPS = (function() {
         });
     };
 
+
     var bestHeroTemplate = [
         '<div class="col-xs-4">',
         '   <div class="hero-avatar">',
@@ -31,7 +32,16 @@ HOTS.MAPS = (function() {
         '</div>'
     ];
 
+    function bindLink() {
+        $(".map").click(function (event) {
+            event.preventDefault();
+
+            window.location.href = $(this).attr("x-data-link");
+        });
+    };
+
     return {
-        load: load
+        load: load,
+        bindLink: bindLink
     }
 })();
