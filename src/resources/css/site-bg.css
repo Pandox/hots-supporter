@@ -1,0 +1,30 @@
+.site-bg {
+    background: url(/resources/img/bg.jpg) no-repeat center bottom;
+    background-size: cover;
+    height: 445px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.site-bg-gradient {
+    background: linear-gradient(270deg, #010522, #2e0344, #010522);
+    background-size: 200% 200%;
+    height: 445px;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.site-bg:after {
+    background: linear-gradient(0deg, rgba(10, 10, 26, 1), rgba(10, 10, 26, 0));
+    content: "";
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

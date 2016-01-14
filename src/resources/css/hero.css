@@ -1,0 +1,36 @@
+.hero-avatar {
+    margin-top: 30px;
+    position: relative;
+    top: 10px;
+}
+.hero-avatar .avatar {
+    float: left;
+    height: 92px;
+    overflow: hidden;
+    position: relative;
+    width: 92px;
+    -moz-transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+    -webkit-transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+    transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+}
+.hero-avatar .avatar div {
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    -moz-transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    -webkit-transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+}
+.hero-avatar .frame {
+    background: url(http://www.heroescounters.com/images/hexagon-big.png) no-repeat 0 0;
+    content: "";
+    height: 128px;
+    position: absolute;
+    top: -16px;
+    left: -11px;
+    width: 116px;
+}

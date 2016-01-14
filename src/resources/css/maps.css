@@ -1,0 +1,89 @@
+.map {
+    background: #16132f;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.map:hover {
+    text-shadow: 0 0 16px #009cff;
+}
+.map>.box-image,
+.map>.box-image:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #969aec;
+    display: block;
+    height: 0;
+    position: relative;
+    padding: 60.7% 0 0 0;
+    text-decoration: none;
+    width: 100%;
+}
+.map.disabled {
+    -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+.map>.box-image:after {
+    background: linear-gradient(0deg, rgba(22,19,47,1), rgba(22,19,47,0));
+    content: "";
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.map>h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: none;
+    white-space: nowrap;
+}
+.battlefield-of-eternity {
+    background-image: url(http://www.heroescounters.com/images/maps/400/8.jpg);
+}
+.blackheart-bay {
+    background-image: url(http://www.heroescounters.com/images/maps/400/4.jpg);
+}
+.cursed-hollow {
+    background-image: url(http://www.heroescounters.com/images/maps/400/3.jpg);
+}
+.dragon-shire {
+    background-image: url(http://www.heroescounters.com/images/maps/400/2.jpg);
+}
+.garden-of-terror {
+    background-image: url(http://www.heroescounters.com/images/maps/400/5.jpg);
+}
+.haunted-mines {
+    background-image: url(http://www.heroescounters.com/images/maps/400/1.jpg);
+}
+.infernal-shrines {
+    background-image: url(http://www.heroescounters.com/images/maps/400/9.jpg);
+}
+.sky-temple {
+    background-image: url(http://www.heroescounters.com/images/maps/400/6.jpg);
+}
+.tomb-of-the-spider-queen {
+    background-image: url(http://www.heroescounters.com/images/maps/400/7.jpg);
+}
+.towers-of-doom {
+    background-image: url(http://www.heroescounters.com/images/maps/400/10.jpg);
+}
+
+.map-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #ba1ab1;
+    background: rgba(10,10,23, 0.9);
+    z-index: 3;
+}
